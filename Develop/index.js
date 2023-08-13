@@ -66,13 +66,13 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-  const readMeEl =[];
+  const readMeEl = [];
   inquirer.prompt(questions)
     .then((data) => {
       if (data) {
         // User option if not input is placed; if data is true; then add to the readMeEl which will go to the generateMarkdown.js
-        const readMeEl = generateMarkdown(data);
-        writeToFile('readMe.md', readMeEl);
+        readMeEl.push(generateMarkdown(data));
+        writeToFile('readMe.md', readMeEl.join('\n'));
       }
     });
 }
