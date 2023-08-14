@@ -23,7 +23,7 @@ const questions = [
   },
   {
     type: 'editor',
-    message: 'Provide usage instructions; a .txt file will pop up. Please write all your steps and add `<br>` after each steps if necessary',
+    message: 'Provide usage instructions; a .txt file will pop up. Please write all your steps. <br> are not necessary',
     name: 'usage',
   },
   {
