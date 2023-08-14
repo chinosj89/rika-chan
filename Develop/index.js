@@ -23,7 +23,7 @@ const questions = [
   },
   {
     type: 'editor',
-    message: 'Provide usage instructions; a .txt file will pop up. Please write all your steps',
+    message: 'Provide usage instructions; a .txt file will pop up. Please write all your steps. Add two spaces at the end of each line to generate line breaks',
     name: 'usage',
   },
   {
@@ -61,13 +61,13 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (err) =>
-  err ? console.error('Error!', err) : console.log('See your ReadMe!'))
+    err ? console.error('Error!', err) : console.log('See your ReadMe!'))
 }
 
 // TODO: Create a function to initialize app
 function init() {
   const readMeEl = [];
-  inquirer.prompt(questions)
+  return inquirer.prompt(questions)
     .then((data) => {
       if (data) {
         // User option if not input is placed; if data is true; then add to the readMeEl which will go to the generateMarkdown.js
