@@ -38,10 +38,10 @@ function generateMarkdown(data) {
 
   ${renderLicenseBadge(data.license)}
 
-
+ 
   ## Description
   ${data.description}
-  
+  <!-- Add a screenshot of your application here -->
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
