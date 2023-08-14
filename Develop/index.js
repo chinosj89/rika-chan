@@ -23,7 +23,7 @@ const questions = [
   },
   {
     type: 'editor',
-    message: 'Provide usage instructions; a .txt file will pop up. Please write all your steps. Add two spaces at the end of each line to generate line breaks',
+    message: 'Provide usage instructions; a .txt file will pop up. Please write all your steps and add `<br>` after each steps if necessary',
     name: 'usage',
   },
   {
@@ -32,9 +32,14 @@ const questions = [
     name: 'credits',
   },
   {
-    type: 'input',
+    type: 'list',
     message: 'What License did you use?',
     name: 'license',
+    choices: [
+      'MIT',
+      'Apache',
+      'GPL',
+    ],
   },
   {
     type: 'input',
