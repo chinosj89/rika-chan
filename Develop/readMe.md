@@ -11,7 +11,9 @@
   I WANT a README generator
   SO THAT I can quickly create a professional README for a new project
   ```
+  ### Prompts: 
   ![Alt text](image-1.png)
+  ### Generated ReadMe
   ![Alt text](image.png)
   
   ## Table of Contents
@@ -28,6 +30,7 @@
   
   ## Usage 
   ```
+  ACCEPTANCE CRITERIA: 
   GIVEN a command-line application that accepts user input
 WHEN I am prompted for information about my application repository
 THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
@@ -44,16 +47,17 @@ THEN this is added to the section of the README entitled Questions, with instruc
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
   ```
-
+  ### DEMO: 
+ Video of application's demonstration: [ReadMe Geneator Demo](https://drive.google.com/file/d/14TMtnMRv3agJQGkVPHaVv334sqwMk9IV/view)
   
   ## Credits
-  None
+  [ReadMe Template](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
   
   ## License
   This project uses the [MIT License](https://opensource.org/licenses/MIT) license
   
   ## How to Contribute
-  Open Source
+  Open Source Project. Feel free to make your own changes to it.
   
   ## Tests
   No Tests required
